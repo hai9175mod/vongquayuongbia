@@ -1,16 +1,16 @@
 import { WheelItem } from "@/types";
 
 export const DEFAULT_ITEMS: WheelItem[] = [
-  { id: 1, text: "Team mình cạn ly" },
-  { id: 2, text: "Chỉ định 1 team cạn ly" },
-  { id: 3, text: "Chọn 1 team, cả 2 team cùng uống" },
-  { id: 4, text: "Chỉ nữ uống 100%" },
-  { id: 5, text: "Chỉ nam uống 100%" },
-  { id: 6, text: "Team mời Sếp Chiến cùng cạn ly" },
-  { id: 7, text: "Cả team uống 100% hoặc cử đại diện nhảy 15 giây" },
-  { id: 8, text: "Cả team uống 100% hoặc cử đại diện hát 1 bài" },
-  { id: 9, text: "Thụt dầu/hít đất 10 cái hoặc uống" },
-  { id: 10, text: "Tất cả uống 100%, trừ team mình" }
+  { id: 1, text: "Team mình cạn ly", enabled: true },
+  { id: 2, text: "Chỉ định 1 team cạn ly", enabled: true },
+  { id: 3, text: "Chọn 1 team, cả 2 team cùng uống", enabled: true },
+  { id: 4, text: "Chỉ nam uống 100%", enabled: true },
+  { id: 5, text: "Team mời Sếp Chiến cùng cạn ly", enabled: true },
+  { id: 6, text: "Cả team uống 100% hoặc cử đại diện nhảy 15 giây", enabled: true },
+  { id: 7, text: "Cả team uống 100% hoặc cử đại diện hát 1 bài", enabled: true },
+  { id: 8, text: "Thụt dầu/hít đất 10 cái hoặc uốn", enabled: true },
+  { id: 9, text: "Tất cả uống 100%, trừ team mình", enabled: true },
+  { id: 10, text: "Chỉ nữ uống 100%", enabled: true },
 ];
 
 // Palette Pastel trên nền đen
