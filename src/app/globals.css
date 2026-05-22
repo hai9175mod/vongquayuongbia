@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #FFFBEB;
+  --foreground: #1A1A1A;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  background-image: radial-gradient(circle at 60% 30%, rgba(251, 191, 36, 0.15) 0%, transparent 60%),
+                    radial-gradient(circle at 20% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 50%);
+  background-attachment: fixed;
+  /* FIX: Cho phép scroll, không khóa cứng chiều cao */
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Chỉ ẩn scroll ngang */
+  overflow-y: auto;   /* Scroll dọc tự nhiên */
+}
+
+.font-heading {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.wheel-spin-transition {
+  transition: transform 5s cubic-bezier(0.2, 0, 0.1, 1);
+}
+
+/* Confetti giữ nguyên */
+.confetti-container {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 0; overflow: hidden;
+}
+.confetti {
+    position: absolute; width: 12px; height: 12px;
+    animation: fall var(--duration) linear infinite; opacity: 0.9;
+}
+.c-red { background: #EF4444; } .c-yellow { background: #F59E0B; }
+.c-blue { background: #3B82F6; } .c-green { background: #10B981; }
+@keyframes fall {
+    0% { top: -10%; transform: translateX(0) rotate(0deg); opacity: 1; }
+    100% { top: 110%; transform: translateX(var(--drift)) rotate(720deg); opacity: 0; }
+}
+
+.text-gradient-fire {
+    background: linear-gradient(to right, #DC2626, #EA580C, #F59E0B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+.text-3d-modern {
+    text-shadow: 1px 1px 0 #fff, 2px 2px 0 rgba(0,0,0,0.1), 3px 3px 0 rgba(0,0,0,0.1);
 }
