@@ -1,27 +1,16 @@
 import { WheelItem } from "@/types";
 
 export const DEFAULT_ITEMS: WheelItem[] = [
-  { id: 1, text: "GẮN KẾT - Tất cả cùng cạn 1 ly", enabled: true },
-  { id: 2, text: "Mời bạn đối diện cạn 1 ly", enabled: true },
-  { id: 3, text: "Ai còn đầy ly thì uống hết", enabled: true },
-  { id: 4, text: "Thích ai nhất thì uống 100% với họ", enabled: true },
-  { id: 5, text: "Tất cả uống trừ bạn", enabled: true },
-  { id: 6, text: "Phải uống cạn - Trái lắc hông", enabled: true },
-  { id: 7, text: "Trái uống cạn - Phải ăn mồi", enabled: true },
-  { id: 8, text: "Nữ uống, nam vỗ tay", enabled: true },
-  { id: 9, text: "Nam uống, nữ vỗ tay", enabled: true },
-  { id: 10, text: "Lắc mông 15s hoặc uống gấp đôi", enabled: true },
-  { id: 11, text: "Chọn ly bất kỳ và uống hết", enabled: true },
-  { id: 12, text: "Đấu mắt với người khác giới, ai nháy mắt trước thì uống 100%", enabled: true },
-  { id: 13, text: "Năm sinh chẵn uống", enabled: true },
-  { id: 14, text: "Năm sinh lẻ uống", enabled: true },
-  { id: 15, text: "Selfie với 1 người, cả 2 uống", enabled: true },
-  { id: 16, text: "Tuổi ngựa (ngọ) uống", enabled: true },
-  { id: 17, text: "Lắc mông 15s hoặc uống gấp đôi", enabled: true },
-  { id: 18, text: "Hát 1 bài hoặc uống 100%", enabled: true },
-  { id: 19, text: "Uống 100% và Quay lần nữa", enabled: true },
-  { id: 20, text: "Sinh tháng 5, Cạn ly", enabled: true },
-  { id: 21, text: "Đoàn kết, chọn 3 người khác nâng ly", enabled: true },
+  { id: 1, text: "Team mình cạn ly" },
+  { id: 2, text: "Chỉ định 1 team cạn ly" },
+  { id: 3, text: "Chọn 1 team, cả 2 team cùng uống" },
+  { id: 4, text: "Chỉ nữ uống 100%" },
+  { id: 5, text: "Chỉ nam uống 100%" },
+  { id: 6, text: "Team mời Sếp Chiến cùng cạn ly" },
+  { id: 7, text: "Cả team uống 100% hoặc cử đại diện nhảy 15 giây" },
+  { id: 8, text: "Cả team uống 100% hoặc cử đại diện hát 1 bài" },
+  { id: 9, text: "Thụt dầu/hít đất 10 cái hoặc uống" },
+  { id: 10, text: "Tất cả uống 100%, trừ team mình" }
 ];
 
 // Palette Pastel trên nền đen
